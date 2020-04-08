@@ -37,7 +37,7 @@ exports.postOneScream = (req, res) => {
     }
 
     db
-    .collection('Screams')
+    .collection('screams')
     .add(newScream)
     .then(doc => {
         const resScream = newScream;
